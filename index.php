@@ -14,7 +14,7 @@ if ($conn->connect_error){
 		$motor4 = $_POST['motor4'];
 		$motor5 = $_POST['motor5'];
 		$motor6 = $_POST['motor6'];
-		$my_query ="INSERT INTO table (motor1,motor2,motor3,motor4,motor5,motor6)
+		$my_query ="INSERT INTO motors (motor1,motor2,motor3,motor4,motor5,motor6)
 		VALUES('$motor1','$motor2','$motor3','$motor4','$motor5','$motor6')";
 	if(	mysqli_query($conn,$my_query))
 		{
